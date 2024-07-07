@@ -1,0 +1,14 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/parth/Desktop/DSA/taylorSeriesHorner'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z1eii, symObjAddr: 0x0, symBinAddr: 0x100003C70, symSize: 0x84 }
+  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: __Z1eii, symObjAddr: 0x0, symBinAddr: 0x100003C70, symSize: 0x84 }
+  - { offsetInCU: 0x5C, offset: 0x5C, size: 0x8, addend: 0x0, symName: __ZZ1eiiE1s, symObjAddr: 0x278, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x44CF, offset: 0x44CF, size: 0x8, addend: 0x0, symName: __ZNSt3__14endlB8ue170006IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_, symObjAddr: 0x100, symBinAddr: 0x100003D70, symSize: 0x58 }
+  - { offsetInCU: 0x450F, offset: 0x450F, size: 0x8, addend: 0x0, symName: __ZNSt3__19use_facetB8ue170006INS_5ctypeIcEEEERKT_RKNS_6localeE, symObjAddr: 0x1E4, symBinAddr: 0x100003E54, symSize: 0x2C }
+  - { offsetInCU: 0x6ED0, offset: 0x6ED0, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x84, symBinAddr: 0x100003CF4, symSize: 0x50 }
+  - { offsetInCU: 0x6FB3, offset: 0x6FB3, size: 0x8, addend: 0x0, symName: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB8ue170006EPFRS3_S4_E, symObjAddr: 0xD4, symBinAddr: 0x100003D44, symSize: 0x2C }
+  - { offsetInCU: 0x6FE5, offset: 0x6FE5, size: 0x8, addend: 0x0, symName: __ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ue170006Ec, symObjAddr: 0x158, symBinAddr: 0x100003DC8, symSize: 0x8C }
+  - { offsetInCU: 0x7051, offset: 0x7051, size: 0x8, addend: 0x0, symName: __ZNKSt3__15ctypeIcE5widenB8ue170006Ec, symObjAddr: 0x210, symBinAddr: 0x100003E80, symSize: 0x38 }
+...
