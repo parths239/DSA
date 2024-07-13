@@ -15,7 +15,7 @@ int main()
   cin >> m;
 
   A = new int *[n];
-  // creating an array of pointer of which will have n arrays
+  // creating an array of pointers in heap which will have n arrays
 
   // A[0] = new int[4];
   // A[1] = new int[4];
