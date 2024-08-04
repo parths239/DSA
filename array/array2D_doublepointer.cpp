@@ -54,6 +54,14 @@ int main()
     // first deleting all the inside pointer pointing to arrays
   }
 
+  // //// very important: deleting pointer from heap to stop the leak
+  // for (int i = 0; i < n; i++)
+  // {
+  //   delete[] A[i];
+  //   // first deleting all the inside pointer pointing to arrays
+  // }
+
+
   // now deleting main pointer in heap
   delete[] A;
 
