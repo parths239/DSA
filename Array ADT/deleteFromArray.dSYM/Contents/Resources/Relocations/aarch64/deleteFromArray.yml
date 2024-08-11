@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/parth/Desktop/DSA/Array ADT/deleteFromArray'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z7Display5Array, symObjAddr: 0x0, symBinAddr: 0x100003D58, symSize: 0x88 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: __Z7Display5Array, symObjAddr: 0x0, symBinAddr: 0x100003D58, symSize: 0x88 }
+  - { offsetInCU: 0x78, offset: 0x78, size: 0x8, addend: 0x0, symName: __Z6DeleteP5Arrayi, symObjAddr: 0x88, symBinAddr: 0x100003DE0, symSize: 0xDC }
+  - { offsetInCU: 0xCE, offset: 0xCE, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x164, symBinAddr: 0x100003EBC, symSize: 0x84 }
+...
