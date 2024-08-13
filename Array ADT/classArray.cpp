@@ -19,7 +19,7 @@ Array::Array(int *A, int s) : size(s)
   {
     Arr[i] = A[i];
   }
-  // Optionally, fill the rest of Arr with a default value (e.g., 0)
+  // Fill the rest of Arr with a default value (e.g., 0)
   for (int i = size; i < 10; ++i)
   {
     Arr[i] = 0;
@@ -28,7 +28,7 @@ Array::Array(int *A, int s) : size(s)
 
 void Array::print()
 {
-  for (int i = 0; i < size; ++i) // Initialize 'i' and use it correctly
+  for (int i = 0; i < 10; ++i) // Print all elements in the array, since Arr has 10 elements
   {
     cout << " " << Arr[i];
   }
