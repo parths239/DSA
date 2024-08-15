@@ -1,4 +1,5 @@
 // Array using C++ modified
+// Reorganized code
 #include <iostream>
 using namespace std;
 class Array
