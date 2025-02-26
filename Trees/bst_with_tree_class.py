@@ -1,4 +1,5 @@
 class BinaryTreeNode:
+  
   def __init__(self,data):
     self.data = data
     self.left = None
@@ -105,11 +106,33 @@ class BinaryTreeNode:
     elements.append(self.data)
     
     return elements
-    
-    
+
+  def delete(self, val):
+        if val < self.data:
+            if self.left:
+                self.left = self.left.delete(val)
+        elif val > self.data:
+            if self.right:
+                self.right = self.right.delete(val)
+        else:
+            if self.left is None and self.right is None:
+                return None
+            elif self.left is None:
+                return self.right
+            elif self.right is None:
+                return self.left
+
+            min_val = self.right.find_min()
+            self.data = min_val
+            self.right = self.right.delete(min_val)
+
+        return self
+     
 
 if __name__ == "__main__":
+  
   root = BinaryTreeNode(15)
+  
   # root.add_child(2)
   # root.add_child(7)
   # root.add_child(3)
@@ -128,6 +151,7 @@ if __name__ == "__main__":
   
   
   
+  
   print(root.in_order_traversal())
   print(root.search(2))
   print(root.find_min())
@@ -135,3 +159,7 @@ if __name__ == "__main__":
   print(root.calculate_sum())
   print(root.pre_order_traversal())
   print(root.post_order_traversal())
+  
+  # root.remove(23)
+  # print(root.in_order_traversal())
+  
