@@ -1,7 +1,7 @@
 # intial tree node setup
 class TreeNode:
   
-  def __init__(self,data):
+  def __init__(self, data):
     self.data = data
     self.right = None
     self.left = None
@@ -39,7 +39,6 @@ class BinarySearchTree:
       return self.search_recursive(self.root, value)
   
   def search_recursive(self, node, value):
-    
     
     if node is None:
       return False
@@ -85,14 +84,14 @@ class BinarySearchTree:
   def post_order_traversal(self):
     
     elements = []
-    self.post_oreder_recursive(self.root, elements)
+    self.post_order_recursive(self.root, elements)
     return elements
   
-  def post_oreder_recursive(self, node, elements):
+  def post_order_recursive(self, node, elements):
     
     if node:
-      self.post_oreder_recursive(node.left, elements)
-      self.post_oreder_recursive(node.right, elements)
+      self.post_order_recursive(node.left, elements)
+      self.post_order_recursive(node.right, elements)
       elements.append(node.data)
   
 # delete function
@@ -122,7 +121,7 @@ class BinarySearchTree:
         return node.left
       # case 3: has both children
         #option 1: return smallest element in right subtree and delete it
-      min_value = self.find_min(node.right)
+      min_value = self.find_min(node.right) 
       node.data = min_value
       node.right = self.delete_recursive(node.right,min_value)
         #option 2: return largest element in left subtree and delete it
@@ -157,8 +156,8 @@ if __name__ == "__main__":
     GajabTree.add(element)
     
   print(GajabTree.in_order_traversal())
-  print(GajabTree.pre_order_traversal())
-  print(GajabTree.post_order_traversal())
+  # print(GajabTree.pre_order_traversal())
+  # print(GajabTree.post_order_traversal())
   print(GajabTree.search(13))
   print(GajabTree.search(15))
   print(GajabTree.search(11))
