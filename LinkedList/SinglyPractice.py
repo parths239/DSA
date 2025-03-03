@@ -47,15 +47,17 @@ class LinkedList:
       i+=1
     
     if curr and curr.next:
+      if curr.next == self.tail:
+        self.tail = curr
       curr.next = curr.next.next
       return True
+    
     
     return False
   
   def get_values(self) -> list[int]:
     
     curr = self.head.next
-    i = 0
     
     array = []
     
